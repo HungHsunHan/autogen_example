@@ -21,7 +21,7 @@ config_list = [
 
 config_azure_list = [
     {
-        "model": "gpt-4o",
+        "model": "gpt-4o-mini",
         "api_key": os.getenv("AZURE_OPENAI_API_KEY"),
         "base_url": os.getenv("AZURE_OPENAI_ENDPOINT"),
         "api_type": "azure",
@@ -65,6 +65,6 @@ Otherwise, reply CONTINUE, or the reason why the task is not solved yet.""",
 user_proxy.initiate_chat(
     assistant,
     message="""
-            今天是2024年9月28日,今天台灣發生了哪些政治新聞並以markdown形式呈現並儲存成output.md。
+            Help me to search the latest battery degradation paper online in arxiv and give me the research trend。
             """,
 )
